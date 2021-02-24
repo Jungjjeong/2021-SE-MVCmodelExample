@@ -14,6 +14,10 @@ userDB = db['user']
 boardDB = db['board']
 pictureDB = db['picture']
 
+@app.route('/')
+def hello_world():
+    return "hello world!"
+
 @app.route('/login', methods=['POST']) 
 def login():
     userid = request.json['userid']
