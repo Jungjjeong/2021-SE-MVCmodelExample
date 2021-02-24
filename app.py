@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 app.secret_key = 'software_engineering'
 
-""" cluster = MongoClient(
+cluster = MongoClient(
     "mongodb+srv://YeHyunSuh:Tjdmdgka55!@cluster0.qbm6b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db = cluster["software_engineering"]
 userDB = db['user']
-boardDB = db['board'] """
+boardDB = db['board']
 
 @app.route('/')
 def hello_world():
